@@ -1,1 +1,100 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  color: #fff;
+  background-color: #7fcd25;
+  cursor: pointer;
+  width: 112px;
+  height: 37px;
+  border-radius: 50px;
+  border: #7fcd25;
+}
+
+body {
+  height: 100vh;
+  font-family: "Alegreya Sans", sans-serif;
+}
+
+header {
+  line-height: normal;
+}
+header .container {
+  background: #282828;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2rem;
+}
+header .container #logo {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+}
+header .container ul {
+  display: flex;
+  list-style: none;
+}
+header .container ul li {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 1rem;
+}
+header .container #login {
+  position: absolute;
+  top: 2.5rem;
+  right: 9rem;
+}
+
+#home .container #banner {
+  background-image: url(images/home-photo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  padding: 1rem;
+}
+#home .container #banner h1 {
+  font-size: 70px;
+  font-weight: 500;
+  color: white;
+  text-shadow: 1px 4px 20px rgba(0, 0, 0, 0.25);
+}
+#home .container #banner span {
+  color: #7fcd25;
+}
+#home .container #home-products {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+#home .container #home-products #cards {
+  display: flex;
+  justify-content: space-between;
+}
+#home .container #home-products #cards .product-card {
+  background: #e8e8e8;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 2rem;
+}
+#home .container #home-products #cards .product-card a {
+  color: black !important;
+}/*# sourceMappingURL=style.css.map */

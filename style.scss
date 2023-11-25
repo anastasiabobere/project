@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700;800&display=swap");
+//for everything
+$bg-dark: #282828;
+$bg-grey: #e8e8e8;
+$green-color: #7fcd25;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  width: 100px;
+  height: 100px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.btn {
+  color: #fff;
+  background-color: $green-color;
+  cursor: pointer;
+  width: 112px;
+  height: 37px;
+  border-radius: 50px;
+  border: #7fcd25;
+}
+// Home page
+body {
+  height: 100vh;
+  font-family: "Alegreya Sans", sans-serif;
+}
+header {
+  line-height: normal;
+  .container {
+    background: $bg-dark;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+    // align-items: center;
+    #logo {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 800;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+
+      li {
+        font-size: 20px;
+        font-weight: 300;
+        padding: 1rem;
+      }
+    }
+    #login {
+      position: absolute;
+      top: 2.5rem;
+      right: 9rem;
+    }
+  }
+}
+//section home
+#home {
+  .container {
+    #banner {
+      background-image: url(images/home-photo.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      text-align: center;
+      padding: 1rem;
+      h1 {
+        font-size: 70px;
+        font-weight: 500;
+        color: white;
+        text-shadow: 1px 4px 20px rgba(0, 0, 0, 0.25);
+      }
+      span {
+        color: $green-color;
+      }
+    }
+    #home-products {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding-bottom: 2rem;
+      #cards {
+        display: flex;
+        justify-content: space-between;
+
+        .product-card {
+          background: $bg-grey;
+          text-align: left;
+          padding: 1rem;
+          border-radius: 20px;
+          margin: 2rem;
+          a {
+            color: black !important;
+          }
+        }
+      }
+    }
+  }
+}
+//End of home page
