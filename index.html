@@ -6,13 +6,16 @@
     <meta name="author" content=" Anastasia Bobere" />
     <meta name="description" content="TradeHub" />
     <meta name="keywords" content="Recycle thrifting TradeHub" />
+    <script
+      src="https://kit.fontawesome.com/1995a9df69.js"
+      crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <title>TradeHub</title>
   </head>
   <body>
     <header id="header">
       <div class="container">
-        <h3 id="logo">TradeHub</h3>
+        <a href="index.html" id="logo">TradeHub</a>
         <ul>
           <li><a href="products.html">Products</a></li>
           <li><a href="about.html">About Us</a></li>
@@ -31,7 +34,11 @@
         </div>
         <div id="home-products">
           <h3>Take a look at the latest products</h3>
-          <button class="btn"><a href="products.html">More </a></button>
+          <button class="btn">
+            <a href="products.html"
+              >More <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </button>
           <div id="cards">
             <div class="product-card">
               <img src="images/product-jeans.jpg" alt="" /><br />
@@ -69,14 +76,20 @@
           >
         </p>
         <button class="btn"><a href="about.html"> Learn More</a></button>
-        <h4>Look at this</h4>
-        <img src="images/vector-1.png" alt="vector" />
-        <img src="images/statistics.jpg" alt="Photo of statistics" />
+        <h4>Look at this!</h4>
+        <img src="images/vector-1.png" class="arrow" alt="vector" />
+        <img
+          src="images/statistics.jpg"
+          id="statistics"
+          alt="Photo of statistics" />
       </div>
     </section>
     <footer>
-      <h3 id="logo">TradeHub</h3>
-      <p>If you have any problems contact us <span>here</span></p>
+      <a id="logo" href="index.html">TradeHub</a>
+      <p>
+        If you have any problems contact us
+        <a href="contact.html"><span>here</span></a></a>
+      </p>
     </footer>
     <script src="script.js"></script>
   </body>
