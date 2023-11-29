@@ -184,6 +184,7 @@ header {
     }
   }
 }
+
 //footer
 footer {
   background-color: $bg-dark;
@@ -208,6 +209,84 @@ footer {
 }
 //End of home page
 
+//About page
+#about {
+  .about-div {
+    display: grid;
+    padding: 2rem;
+    grid-template-areas:
+      "header header img1 img1"
+      "p p img1 img1";
+    h2 {
+      grid-area: header;
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+    span {
+      color: $green-color;
+    }
+    img {
+      grid-area: img1;
+      width: 605px;
+      height: 425px;
+    }
+    p {
+      grid-area: p;
+      width: 700px;
+      text-align: left;
+      font-size: 22px;
+
+      a {
+        color: black;
+        text-decoration: underline;
+      }
+    }
+  }
+  .about {
+    display: grid;
+    padding: 2rem;
+    grid-template-areas:
+      "text text2 arrow2 arrow "
+      "img2 img2 h3 h3"
+      "img2 img2 p p";
+    h4 {
+      grid-area: text2;
+      font-size: 30px;
+      text-align: right;
+      width: 217px;
+      height: 25px;
+      font-weight: 400;
+      margin-bottom: 6rem;
+    }
+    #arr2 {
+      grid-area: arrow2;
+      justify-self: left;
+      width: 66px;
+      height: 50.5px;
+      padding-left: 1.2rem;
+      animation: moveArrow 1s alternate-reverse infinite;
+    }
+    #chart {
+      grid-area: img2;
+      width: 605px;
+      height: 425px;
+    }
+    h3 {
+      grid-area: h3;
+      font-size: 48px;
+
+      font-weight: 700;
+    }
+    p {
+      grid-area: p;
+      width: 700px;
+      text-align: left;
+      font-size: 22px;
+    }
+  }
+}
+//End of about
 //keyframes
 @keyframes moveArrow {
   from {

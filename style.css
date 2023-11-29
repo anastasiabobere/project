@@ -192,6 +192,74 @@ footer span {
   color: #7fcd25;
 }
 
+#about .about-div {
+  display: grid;
+  padding: 2rem;
+  grid-template-areas: "header header img1 img1" "p p img1 img1";
+}
+#about .about-div h2 {
+  grid-area: header;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+#about .about-div span {
+  color: #7fcd25;
+}
+#about .about-div img {
+  grid-area: img1;
+  width: 605px;
+  height: 425px;
+}
+#about .about-div p {
+  grid-area: p;
+  width: 700px;
+  text-align: left;
+  font-size: 22px;
+}
+#about .about-div p a {
+  color: black;
+  text-decoration: underline;
+}
+#about .about {
+  display: grid;
+  padding: 2rem;
+  grid-template-areas: "text text2 arrow2 arrow " "img2 img2 h3 h3" "img2 img2 p p";
+}
+#about .about h4 {
+  grid-area: text2;
+  font-size: 30px;
+  text-align: right;
+  width: 217px;
+  height: 25px;
+  font-weight: 400;
+  margin-bottom: 6rem;
+}
+#about .about #arr2 {
+  grid-area: arrow2;
+  justify-self: left;
+  width: 66px;
+  height: 50.5px;
+  padding-left: 1.2rem;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
+#about .about #chart {
+  grid-area: img2;
+  width: 605px;
+  height: 425px;
+}
+#about .about h3 {
+  grid-area: h3;
+  font-size: 48px;
+  font-weight: 700;
+}
+#about .about p {
+  grid-area: p;
+  width: 700px;
+  text-align: left;
+  font-size: 22px;
+}
+
 @keyframes moveArrow {
   from {
     transform: translateY(-15px);
