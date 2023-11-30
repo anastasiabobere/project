@@ -15,6 +15,11 @@ a {
   color: white;
 }
 
+.active {
+  color: #7fcd25;
+  font-weight: 800;
+}
+
 .btn {
   color: #fff;
   background-color: #7fcd25;
@@ -258,6 +263,21 @@ footer span {
   width: 700px;
   text-align: left;
   font-size: 22px;
+}
+
+#contact .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  gap: 8rem;
+}
+#contact .container img {
+  width: 340px;
+}
+#contact .container #form {
+  border: 1px solid #acacac;
+  width: 720px;
 }
 
 @keyframes moveArrow {
