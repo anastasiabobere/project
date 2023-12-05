@@ -35,6 +35,29 @@ a {
   font-weight: bolder;
 }
 
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+.cards .product-card {
+  background: #e8e8e8;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 20px;
+  margin: 2rem;
+}
+.cards .product-card img {
+  border-radius: 20px;
+  display: table;
+  margin: 0 auto;
+  width: 168px;
+  height: 161px;
+}
+.cards .product-card a {
+  color: black !important;
+  font-weight: 500;
+}
+
 body {
   height: 100vh;
   font-family: "Alegreya Sans", sans-serif;
@@ -102,28 +125,6 @@ header .container #login {
   margin-bottom: 2rem;
   font-weight: 400;
   font-size: 24px;
-}
-#home .container #home-products #cards {
-  display: flex;
-  justify-content: space-between;
-}
-#home .container #home-products #cards .product-card {
-  background: #e8e8e8;
-  text-align: left;
-  padding: 1rem;
-  border-radius: 20px;
-  margin: 2rem;
-}
-#home .container #home-products #cards .product-card img {
-  border-radius: 20px;
-  display: table;
-  margin: 0 auto;
-  width: 168px;
-  height: 161px;
-}
-#home .container #home-products #cards .product-card a {
-  color: black !important;
-  font-weight: 500;
 }
 
 #home-about .about-div {
