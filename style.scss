@@ -44,6 +44,8 @@ a {
     padding: 1rem;
     border-radius: 20px;
     margin: 2rem;
+    width: 285px;
+    height: 271px;
     img {
       border-radius: 20px;
       display: table;
@@ -364,6 +366,41 @@ footer {
 }
 //end of contact
 //products
+#product-container {
+  display: grid;
+  grid-template-areas:
+    "filter h3"
+    "filter product";
+
+  #filter {
+    grid-area: filter;
+    width: 222px;
+    height: 743px;
+    background-color: #ececec;
+    padding: 1rem;
+    h4 {
+      font-size: 25px;
+      font-weight: 500;
+      margin: 1rem;
+    }
+    h5 {
+      font-size: 20px;
+      font-weight: 400;
+      margin: 0.6rem;
+    }
+  }
+  h3 {
+    grid-area: h3;
+    font-weight: 700;
+    font-size: 32px;
+    margin: 1rem;
+  }
+  .cards {
+    grid-area: product;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 //keyframes
 @keyframes moveArrow {
   from {

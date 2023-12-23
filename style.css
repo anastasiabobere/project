@@ -45,6 +45,8 @@ a {
   padding: 1rem;
   border-radius: 20px;
   margin: 2rem;
+  width: 285px;
+  height: 271px;
 }
 .cards .product-card img {
   border-radius: 20px;
@@ -307,6 +309,39 @@ footer span {
 #contact .container #form form .text-input:focus {
   border: 2px solid #808080;
   outline: none;
+}
+
+#product-container {
+  display: grid;
+  grid-template-areas: "filter h3" "filter product";
+}
+#product-container #filter {
+  grid-area: filter;
+  width: 222px;
+  height: 743px;
+  background-color: #ececec;
+  padding: 1rem;
+}
+#product-container #filter h4 {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 1rem;
+}
+#product-container #filter h5 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0.6rem;
+}
+#product-container h3 {
+  grid-area: h3;
+  font-weight: 700;
+  font-size: 32px;
+  margin: 1rem;
+}
+#product-container .cards {
+  grid-area: product;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 @keyframes moveArrow {
