@@ -35,6 +35,21 @@ a {
   font-weight: bolder;
 }
 
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .cards {
   display: flex;
   justify-content: space-between;
@@ -136,8 +151,6 @@ header .container #login {
 }
 #home-about .about-div h2 {
   grid-area: header;
-  font-size: 48px;
-  font-weight: 700;
   margin-bottom: 2rem;
 }
 #home-about .about-div p {
@@ -171,8 +184,6 @@ header .container #login {
 }
 #home-about .about-div h4 {
   grid-area: text;
-  font-weight: 400;
-  font-size: 36px;
   text-align: right;
 }
 #home-about .about-div span {
@@ -207,8 +218,6 @@ footer span {
 }
 #about .about-div h2 {
   grid-area: header;
-  font-size: 48px;
-  font-weight: 700;
   margin-bottom: 2rem;
 }
 #about .about-div span {
@@ -236,11 +245,9 @@ footer span {
 }
 #about .about h4 {
   grid-area: text2;
-  font-size: 30px;
   text-align: right;
   width: 217px;
   height: 25px;
-  font-weight: 400;
   margin-bottom: 6rem;
 }
 #about .about #arr2 {
@@ -286,8 +293,6 @@ footer span {
   text-align: center;
 }
 #contact .container #form h4 {
-  font-size: 32px;
-  font-weight: 700;
   margin: 1.4rem;
 }
 #contact .container #form form {
@@ -323,13 +328,9 @@ footer span {
   padding: 1rem;
 }
 #product-container #filter h4 {
-  font-size: 25px;
-  font-weight: 500;
   margin: 1rem;
 }
 #product-container #filter h5 {
-  font-size: 20px;
-  font-weight: 400;
   margin: 0.6rem;
 }
 #product-container h3 {
@@ -342,6 +343,36 @@ footer span {
   grid-area: product;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+}
+
+#product-details {
+  display: flex;
+  height: calc(100vh - 100px);
+}
+#product-details #product-photo {
+  background-color: #e4e4e4;
+  padding: 1.5rem;
+  height: 445px;
+}
+#product-details #product-photo #main {
+  width: 418px;
+  height: 310px;
+}
+#product-details #product-photo img {
+  width: 108px;
+  height: 84px;
+}
+#product-details #details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+}
+#product-details #details .detail-item {
+  margin-bottom: 1.9rem; /* Adjusted margin for space between items */
+}
+#product-details #details h3 {
+  font-size: 32px;
+  font-weight: 700;
 }
 
 @keyframes moveArrow {

@@ -34,6 +34,19 @@ a {
   text-decoration: underline;
   font-weight: bolder;
 }
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+h5 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
 .cards {
   display: flex;
   justify-content: space-between;
@@ -169,8 +182,7 @@ header {
       "btn btn img img";
     h2 {
       grid-area: header;
-      font-size: 48px;
-      font-weight: 700;
+
       margin-bottom: 2rem;
     }
     p {
@@ -204,8 +216,7 @@ header {
     }
     h4 {
       grid-area: text;
-      font-weight: 400;
-      font-size: 36px;
+
       text-align: right;
     }
     span {
@@ -248,8 +259,7 @@ footer {
       "p p img1 img1";
     h2 {
       grid-area: header;
-      font-size: 48px;
-      font-weight: 700;
+
       margin-bottom: 2rem;
     }
     span {
@@ -281,11 +291,11 @@ footer {
       "img2 img2 p p";
     h4 {
       grid-area: text2;
-      font-size: 30px;
+
       text-align: right;
       width: 217px;
       height: 25px;
-      font-weight: 400;
+
       margin-bottom: 6rem;
     }
     #arr2 {
@@ -304,7 +314,6 @@ footer {
     h3 {
       grid-area: h3;
       font-size: 48px;
-
       font-weight: 700;
     }
     p {
@@ -336,8 +345,6 @@ footer {
       height: 544px;
       text-align: center;
       h4 {
-        font-size: 32px;
-        font-weight: 700;
         margin: 1.4rem;
       }
       form {
@@ -379,13 +386,9 @@ footer {
     background-color: #ececec;
     padding: 1rem;
     h4 {
-      font-size: 25px;
-      font-weight: 500;
       margin: 1rem;
     }
     h5 {
-      font-size: 20px;
-      font-weight: 400;
       margin: 0.6rem;
     }
   }
@@ -399,6 +402,39 @@ footer {
     grid-area: product;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+//product details
+#product-details {
+  display: flex;
+  height: calc(100vh - 100px);
+
+  #product-photo {
+    background-color: #e4e4e4;
+    padding: 1.5rem;
+    height: 445px;
+
+    #main {
+      width: 418px;
+      height: 310px;
+    }
+    img {
+      width: 108px;
+      height: 84px;
+    }
+  }
+  #details {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 1.5rem;
+    .detail-item {
+      margin-bottom: 1.9rem; /* Adjusted margin for space between items */
+    }
+    h3 {
+      font-size: 32px;
+      font-weight: 700;
+    }
   }
 }
 //keyframes
