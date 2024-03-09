@@ -40,6 +40,11 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 30px;
+  font-weight: 6 0;
+}
+
 h4 {
   font-size: 25px;
   font-weight: 500;
@@ -58,13 +63,13 @@ h5 {
   background: #e8e8e8;
   text-align: left;
   padding: 1rem;
-  border-radius: 20px;
+  border-radius: 5px;
   margin: 2rem;
   width: 285px;
   height: 271px;
 }
 .cards .product-card img {
-  border-radius: 20px;
+  border-radius: 10px;
   display: table;
   margin: 0 auto;
   width: 168px;
@@ -140,104 +145,54 @@ header .container #login {
 }
 #home .container #home-products h3 {
   margin-bottom: 2rem;
-  font-weight: 400;
-  font-size: 24px;
 }
 
-#home-about .about-div {
+.about-div {
   display: grid;
   padding: 2rem;
   grid-template-areas: "header header text arrow" "p p img img" "btn btn img img";
 }
-#home-about .about-div h2 {
+.about-div h2 {
   grid-area: header;
   margin-bottom: 2rem;
 }
-#home-about .about-div p {
+.about-div p {
   grid-area: p;
   font-size: 22px;
   padding-right: 20rem;
   text-align: left;
 }
-#home-about .about-div p a {
+.about-div p a {
   color: black;
   text-decoration: underline;
 }
-#home-about .about-div .btn {
+.about-div .btn {
   grid-area: btn;
   margin-top: 2rem;
   width: 122px;
   height: 47px;
   font-size: 17px;
 }
-#home-about .about-div #statistics {
+.about-div #statistics {
   grid-area: img;
   width: 605px;
   height: 425px;
 }
-#home-about .about-div .arrow {
+.about-div .arrow {
   grid-area: arrow;
   width: 66px;
   height: 50.5px;
   padding-left: 1.2rem;
   animation: moveArrow 1s alternate-reverse infinite;
 }
-#home-about .about-div h4 {
+.about-div h4 {
   grid-area: text;
   text-align: right;
 }
-#home-about .about-div span {
+.about-div span {
   color: #7fcd25;
 }
 
-footer {
-  background-color: #282828;
-  display: flex;
-  color: white;
-  flex-direction: row;
-}
-footer #logo {
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 800;
-  padding-left: 3rem;
-}
-footer p {
-  font-weight: 300;
-  font-size: 20px;
-  margin: auto;
-}
-footer span {
-  color: #7fcd25;
-}
-
-#about .about-div {
-  display: grid;
-  padding: 2rem;
-  grid-template-areas: "header header img1 img1" "p p img1 img1";
-}
-#about .about-div h2 {
-  grid-area: header;
-  margin-bottom: 2rem;
-}
-#about .about-div span {
-  color: #7fcd25;
-}
-#about .about-div img {
-  grid-area: img1;
-  width: 605px;
-  height: 425px;
-}
-#about .about-div p {
-  grid-area: p;
-  width: 700px;
-  text-align: left;
-  font-size: 22px;
-}
-#about .about-div p a {
-  color: black;
-  text-decoration: underline;
-}
 #about .about {
   display: grid;
   padding: 2rem;
@@ -265,8 +220,6 @@ footer span {
 }
 #about .about h3 {
   grid-area: h3;
-  font-size: 48px;
-  font-weight: 700;
 }
 #about .about p {
   grid-area: p;
@@ -285,9 +238,11 @@ footer span {
 #contact .container img {
   width: 340px;
   height: 544px;
+  border-radius: 10px;
 }
 #contact .container #form {
   border: 1px solid #acacac;
+  border-radius: 10px;
   width: 720px;
   height: 544px;
   text-align: center;
@@ -310,6 +265,7 @@ footer span {
   border: 1px solid #acacac;
   padding: 1.2rem;
   font-family: Alegreya Sans;
+  border-radius: 5px;
 }
 #contact .container #form form .text-input:focus {
   border: 2px solid #808080;
@@ -335,8 +291,6 @@ footer span {
 }
 #product-container h3 {
   grid-area: h3;
-  font-weight: 700;
-  font-size: 32px;
   margin: 1rem;
 }
 #product-container .cards {
@@ -351,7 +305,7 @@ footer span {
 }
 #product-details #product-photo {
   background-color: #e4e4e4;
-  padding: 1.5rem;
+  padding: 2rem;
   height: 445px;
 }
 #product-details #product-photo #main {
@@ -370,11 +324,63 @@ footer span {
 #product-details #details .detail-item {
   margin-bottom: 1.9rem; /* Adjusted margin for space between items */
 }
-#product-details #details h3 {
-  font-size: 32px;
-  font-weight: 700;
+
+#profile {
+  height: auto;
+}
+#profile .cards {
+  margin-bottom: 2rem;
+}
+#profile .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 1.2rem;
+}
+#profile .profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+#profile .profile h1,
+#profile .profile p,
+#profile .profile .btn {
+  margin-top: 5rem;
 }
 
+footer {
+  background-color: #282828;
+  display: flex;
+  color: white;
+  flex-direction: row;
+  padding: 1.2rem;
+}
+footer #logo {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 800;
+  padding-left: 3rem;
+}
+footer p {
+  font-weight: 300;
+  font-size: 20px;
+  margin: auto;
+}
+footer span {
+  color: #7fcd25;
+}
+
+@media screen and (max-width: 768px) {
+  p {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 576px) {
+  p {
+    font-size: 16px;
+  }
+}
 @keyframes moveArrow {
   from {
     transform: translateY(-15px);
