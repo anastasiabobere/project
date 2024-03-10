@@ -159,7 +159,7 @@ header .container #login {
 .about-div p {
   grid-area: p;
   font-size: 22px;
-  padding-right: 20rem;
+  padding-right: 2rem;
   text-align: left;
 }
 .about-div p a {
@@ -371,14 +371,39 @@ footer span {
   color: #7fcd25;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   p {
     font-size: 18px;
   }
+  .cards {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .about-div {
+    grid-template-areas: "header header header header" "text text arrow arrow" "p p img img" "p p  btn btn";
+    padding: 1rem;
+  }
+  .about-div h2 {
+    font-size: 40px;
+  }
+  .about-div p {
+    padding-right: 0;
+  }
+  .about-div #statistics {
+    width: 405px;
+    height: 225px;
+  }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 560px) {
   p {
     font-size: 16px;
+  }
+  .about-div {
+    grid-template-areas: "header header header header" "text text arrow arrow" "p p p p" "img img  img img" "btn btn  btn btn";
+    padding: 1rem;
+  }
+  .about-div h2 {
+    font-size: 35px;
   }
 }
 @keyframes moveArrow {

@@ -170,7 +170,7 @@ header {
   p {
     grid-area: p;
     font-size: 22px;
-    padding-right: 20rem;
+    padding-right: 2rem;
     text-align: left;
     a {
       color: black;
@@ -411,15 +411,50 @@ footer {
   }
 }
 //media queries
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   p {
     font-size: 18px;
   }
+  .cards {
+    display: flex !important;
+    flex-direction: column;
+  }
+  .about-div {
+    grid-template-areas:
+      "header header header header"
+      "text text arrow arrow"
+      "p p img img"
+      "p p  btn btn";
+    padding: 1rem;
+    h2 {
+      font-size: 40px;
+    }
+    p {
+      padding-right: 0;
+    }
+    #statistics {
+      width: 405px;
+      height: 225px;
+    }
+  }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 560px) {
   p {
     font-size: 16px;
+  }
+  .about-div {
+    grid-template-areas:
+      "header header header header"
+      "text text arrow arrow"
+      "p p p p"
+      "img img  img img"
+      "btn btn  btn btn";
+
+    padding: 1rem;
+    h2 {
+      font-size: 35px;
+    }
   }
 }
 
