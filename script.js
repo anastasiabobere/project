@@ -13,16 +13,28 @@
 //   var nav = document.querySelector("nav");
 //   nav.classList.toggle("active"); // Add or remove the 'active' class
 // });
+
+// const menu = document.querySelector(".menu");
+// const close = document.querySelector(".close");
+// const header = document.querySelector("header");
+// menu.addEventListener("click", () => {
+//   header.classList.add("open-nav");
+//   console.log("clicked");
+// });
+// close.addEventListener("click", () => {
+//   header.classList.remove("open-nav");
+// });
+
 document.addEventListener("DOMContentLoaded", function () {
-  const container = document.querySelector(".container");
-  const menuIcon = document.querySelector(".menu");
-  const closeIcon = document.querySelector(".close");
+  const menuButton = document.querySelector(".menu");
+  const header = document.getElementById("nav-con");
+  const close = document.querySelector(".close");
+  menuButton.addEventListener("click", function () {
+    header.classList.add("open");
 
-  menuIcon.addEventListener("click", function () {
-    container.classList.toggle("menu-opened");
+    console.log("clicked");
   });
-
-  closeIcon.addEventListener("click", function () {
-    container.classList.remove("menu-opened");
+  close.addEventListener("click", function () {
+    header.classList.remove("open");
   });
 });
