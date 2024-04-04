@@ -396,8 +396,21 @@ footer {
     display: flex !important;
     flex-direction: column;
     flex-wrap:wrap;
-    
+    width:50%;
+      
+    .product-card{
+      width:min-content !important;
+      margin : 1rem 0 0.5rem 0 !important;
+      p {
+        font-size:smaller;
+      }
+    };
   }
+  #filter{
+    width:50%;
+  }
+
+    
   .about-div {
     display: flex;
     flex-direction: column;
